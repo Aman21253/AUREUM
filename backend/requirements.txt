@@ -12,3 +12,4 @@ redis
 razorpay
 websockets
 email-validator
+PyMySQL==1.1.2
