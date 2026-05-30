@@ -70,7 +70,7 @@ export default function Wishlist() {
           }}>
             {wishlist.map(item => {
               const imageUrl = item.main_image
-                ? `http://localhost:8000${item.main_image}`
+                ? `${import.meta.env.VITE_API_URL}${item.main_image}`
                 : 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400'
               return (
                 <div key={item.id} style={{

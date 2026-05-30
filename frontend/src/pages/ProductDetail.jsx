@@ -34,7 +34,7 @@ export default function ProductDetail() {
     : []
 
   const imageUrl = product?.main_image
-    ? `http://localhost:8000${product.main_image}`
+    ? `${import.meta.env.VITE_API_URL}${product.main_image}`
     : 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800'
 
   const handleAddToCart = () => {

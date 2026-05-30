@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 export default function CollectionCard({ collection }) {
   const navigate = useNavigate()
   const imageUrl = collection.banner_image
-    ? `http://localhost:8000${collection.banner_image}`
+    ? `${import.meta.env.VITE_API_URL}${collection.banner_image}`
     : 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600'
 
   return (

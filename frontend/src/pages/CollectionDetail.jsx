@@ -58,7 +58,7 @@ export default function CollectionDetail() {
   )
 
   const bannerUrl = collection?.banner_image
-    ? `http://localhost:8000${collection.banner_image}`
+    ? `${import.meta.env.VITE_API_URL}${collection.banner_image}`
     : null
 
   return (
